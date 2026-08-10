@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Web | Remote Development Team</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); }
+        .feature-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .feature-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+
+    <!-- NAV -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-yellow-400 flex items-center justify-center rounded-xl text-black font-bold text-2xl">E</div>
+                <span class="heading-font text-2xl font-semibold tracking-tight">Epic Web</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#services" class="hover:text-yellow-400 transition-colors">Services</a>
+                <a href="#why-us" class="hover:text-yellow-400 transition-colors">Why Epic</a>
+                <a href="#process" class="hover:text-yellow-400 transition-colors">Process</a>
+            </div>
+            <a href="mailto:epicdevteam13@gmail.com" class="bg-yellow-400 hover:bg-yellow-300 transition-colors text-black px-6 py-3 rounded-2xl font-semibold flex items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                Start Project
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 bg-zinc-900 border border-yellow-400/30 text-yellow-400 text-sm px-4 py-2 rounded-3xl">
+                    <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    Remote Elite Development Team
+                </div>
+                <h1 class="heading-font text-5xl md:text-7xl font-bold leading-none tracking-tighter">
+                    We build <span class="text-yellow-400">digital</span><br>experiences that win
+                </h1>
+                <p class="text-xl text-zinc-400 max-w-lg">
+                    Battle-tested remote team delivering high-quality web & mobile solutions. GitHub-first workflow. Fast, reliable delivery.
+                </p>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="mailto:epicdevteam13@gmail.com" class="bg-yellow-400 hover:bg-yellow-300 transition-all text-black px-8 py-4 rounded-3xl font-semibold text-lg flex items-center gap-3">
+                        Launch Your Project
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="https://github.com/epicsereno" target="_blank" class="border border-zinc-700 hover:border-zinc-400 transition-colors px-8 py-4 rounded-3xl font-medium flex items-center gap-2">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub-First
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="bg-zinc-900 rounded-3xl p-4 border border-zinc-800">
+                    <div class="aspect-video bg-zinc-800 rounded-2xl flex items-center justify-center text-zinc-500">
+                        <i class="fa-solid fa-code text-6xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-yellow-400 font-mono text-sm tracking-widest">WHAT WE OFFER</span>
+                <h2 class="heading-font text-4xl md:text-5xl font-bold mt-3">Full-Stack Remote Development Power</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
+                    <div class="w-12 h-12 bg-yellow-400/10 text-yellow-400 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Custom Web Development</h3>
+                    <p class="text-zinc-400">Modern, lightning-fast websites and web apps using React, Next.js, Vue, Node.js, Python and more.</p>
+                </div>
+                <div class="feature-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
+                    <div class="w-12 h-12 bg-yellow-400/10 text-yellow-400 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-mobile-screen-button text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Mobile App Development</h3>
+                    <p class="text-zinc-400">Native and cross-platform mobile applications with React Native, Flutter, and Kotlin Compose.</p>
+                </div>
+                <div class="feature-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
+                    <div class="w-12 h-12 bg-yellow-400/10 text-yellow-400 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">E-Commerce Solutions</h3>
+                    <p class="text-zinc-400">Scalable online stores with payment integration, inventory, and conversion optimization.</p>
+                </div>
+                <div class="feature-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
+                    <div class="w-12 h-12 bg-yellow-400/10 text-yellow-400 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-plug text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">API & Integrations</h3>
+                    <p class="text-zinc-400">Robust backend systems, third-party integrations, and scalable microservices.</p>
+                </div>
+                <div class="feature-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
+                    <div class="w-12 h-12 bg-yellow-400/10 text-yellow-400 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-palette text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">UI/UX Design</h3>
+                    <p class="text-zinc-400">Beautiful, intuitive interfaces from wireframes to polished production designs.</p>
+                </div>
+                <div class="feature-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
+                    <div class="w-12 h-12 bg-yellow-400/10 text-yellow-400 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-headset text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Maintenance & Support</h3>
+                    <p class="text-zinc-400">Ongoing support, updates, security patches, and performance monitoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="why-us" class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-yellow-400 font-mono text-sm tracking-widest">REMOTE DONE RIGHT</span>
+                <h2 class="heading-font text-4xl md:text-5xl font-bold mt-3">The power of a distributed elite team</h2>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-zinc-900 p-8 rounded-3xl border border-zinc-800">
+                    <div class="text-4xl mb-4">🌍</div>
+                    <h4 class="font-semibold text-xl">Global Talent</h4>
+                    <p class="mt-3 text-zinc-400 text-sm">Senior developers across time zones for continuous progress.</p>
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-3xl border border-zinc-800">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h4 class="font-semibold text-xl">Cost Efficient</h4>
+                    <p class="mt-3 text-zinc-400 text-sm">World-class development without Silicon Valley rates.</p>
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-3xl border border-zinc-800">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h4 class="font-semibold text-xl">Agile & Flexible</h4>
+                    <p class="mt-3 text-zinc-400 text-sm">Scale up or down as needed. Sprint-based delivery.</p>
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-3xl border border-zinc-800">
+                    <div class="text-4xl mb-4">🔒</div>
+                    <h4 class="font-semibold text-xl">Security First</h4>
+                    <p class="mt-3 text-zinc-400 text-sm">Secure practices, code reviews, and data protection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-4xl md:text-5xl font-bold">How We Work</h2>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="mx-auto w-16 h-16 bg-yellow-400 text-black rounded-2xl flex items-center justify-center text-3xl font-bold mb-6">1</div>
+                    <h4 class="font-semibold">Discovery Call</h4>
+                    <p class="text-sm text-zinc-400 mt-3">We discuss your vision, goals, and requirements.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto w-16 h-16 bg-yellow-400 text-black rounded-2xl flex items-center justify-center text-3xl font-bold mb-6">2</div>
+                    <h4 class="font-semibold">Proposal & Agreement</h4>
+                    <p class="text-sm text-zinc-400 mt-3">Clear scope, timeline, and transparent pricing.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto w-16 h-16 bg-yellow-400 text-black rounded-2xl flex items-center justify-center text-3xl font-bold mb-6">3</div>
+                    <h4 class="font-semibold">Development Sprints</h4>
+                    <p class="text-sm text-zinc-400 mt-3">Regular updates, demos, and feedback loops.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto w-16 h-16 bg-yellow-400 text-black rounded-2xl flex items-center justify-center text-3xl font-bold mb-6">4</div>
+                    <h4 class="font-semibold">Launch & Support</h4>
+                    <p class="text-sm text-zinc-400 mt-3">Deploy, monitor, and provide ongoing maintenance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-gradient-to-b from-black to-zinc-950">
+        <div class="max-w-3xl mx-auto text-center px-6">
+            <h2 class="heading-font text-5xl md:text-6xl font-bold tracking-tight">Ready to build something epic?</h2>
+            <p class="mt-6 text-xl text-zinc-400">Drop us a line and let's turn your idea into reality.</p>
+            <div class="mt-12">
+                <a href="mailto:epicdevteam13@gmail.com" class="inline-flex items-center justify-center gap-4 bg-yellow-400 hover:bg-amber-300 text-black text-xl md:text-2xl font-semibold px-10 py-6 rounded-3xl transition-all hover:scale-105">
+                    <i class="fa-solid fa-envelope"></i>
+                    epicdevteam13@gmail.com
+                </a>
+                <p class="mt-8 text-sm text-zinc-500">We usually reply within a few hours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12 border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-3 mb-6">
+                <div class="w-7 h-7 bg-yellow-400 flex items-center justify-center rounded-xl text-black font-bold">E</div>
+                <span class="heading-font text-2xl">Epic Web</span>
+            </div>
+            <p class="text-zinc-500 text-sm">Remote Development Team • Delivering excellence since day one</p>
+            <p class="text-xs text-zinc-600 mt-8">© 2026 Epic Web Development. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
